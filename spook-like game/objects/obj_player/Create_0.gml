@@ -9,13 +9,10 @@ shoot_time = 20;
 invencible = false;
 invencible_time = 60;
 coins = 0;
-magnet_distance = 10;
 
 //spd
-wlk = 1;
-run = 1.7;
-spd = wlk
+spd = 2
 
-//effects
-//efeitos
-shadow(true);
+visual_xscale = 1
+visual_angle = 1
+dir = 0

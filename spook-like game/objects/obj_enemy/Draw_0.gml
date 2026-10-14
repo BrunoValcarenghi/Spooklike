@@ -1,8 +1,11 @@
-draw_self()
-
-draw_set_valign(1)
-draw_set_halign(1)
-
-draw_set_colour(c_white)
-
-draw_text(x, y, hp)
+draw_sprite_ext(
+    sprite_index, 
+    image_index, 
+    x, 
+    y, 
+    visual_xscale, 
+    image_yscale, 
+    visual_angle,
+    image_blend, 
+    image_alpha
+);

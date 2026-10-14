@@ -1,8 +1,7 @@
-camw = 640
-camh = 360
+camw = 1280
+camh = 720
 
-if instance_exists(obj_player) flw = obj_player
-else flw = noone
+flw = noone
 
 if flw != noone{
 

@@ -1,3 +1,5 @@
+if hp < 1 room_restart()
+
 get_input()
 pause()
 
@@ -8,4 +10,4 @@ if !trava {
 
 if !invencible{image_alpha = 1}
 
-if hp < 1 room_restart()
+change_direction()
