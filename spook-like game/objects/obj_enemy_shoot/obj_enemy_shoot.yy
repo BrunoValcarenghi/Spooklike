@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_controls",
+  "%Name":"obj_enemy_shoot",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_controls",
+  "name":"obj_enemy_shoot",
   "overriddenProperties":[],
   "parent":{
-    "name":"interface",
-    "path":"folders/obj/interface.yy",
+    "name":"obj",
+    "path":"folders/obj.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_shoot_enemy",
+    "path":"sprites/spr_shoot_enemy/spr_shoot_enemy.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

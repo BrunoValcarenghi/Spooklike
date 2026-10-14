@@ -1,5 +1,1 @@
-if place_meeting(x, y, obj_col){
-
-	instance_destroy()
-
-}
+if distance_to_object(obj_player) > 1280 instance_destroy()

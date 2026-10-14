@@ -13,6 +13,8 @@ function shoot(){
 		direction = point_direction(x, y, mouse_x, mouse_y)
 		image_angle = direction
 		speed = 6
+		image_xscale = other.tamanho_projetil
+		image_yscale = other.tamanho_projetil
 		
 		}
 		

@@ -1,9 +1,8 @@
-hp = 1
-spd = 1
-
 visual_angle = 0
 visual_xscale = 0
 walk_timer = 0
+
+can_shoot = 1
 
 walk_animation_enemy = function(){
     
@@ -21,3 +20,10 @@ change_direction_enemy =  function(){
 
 }
 
+inimigo_andando = function(){
+
+	mp_potential_step_object(obj_player.x, obj_player.y, spd, noone);
+	walk_animation_enemy()
+	change_direction_enemy()
+
+}

@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_language",
+  "%Name":"obj_hordas",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_language",
+  "name":"obj_hordas",
   "overriddenProperties":[],
   "parent":{
-    "name":"interface",
-    "path":"folders/obj/interface.yy",
+    "name":"obj",
+    "path":"folders/obj.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_text",
-    "path":"sprites/spr_text/spr_text.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
