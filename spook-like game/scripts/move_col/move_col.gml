@@ -47,26 +47,30 @@ y += vsp
 
 }
 
-
 function walk_animation(){
     
-    if hsp != 0 or vsp != 0{
-        dir = hsp;
-        walk_timer += 0.2;
+    if (hsp != 0 or vsp != 0) {
+
+        if (hsp != 0) {
+            dir = sign(hsp);
+        }
         
+        walk_timer += 0.2;
         target_angle = sin(walk_timer) * 15;
     } else {
         target_angle = 0;
         walk_timer = 0;
     }
-	
-	visual_angle = lerp(visual_angle, target_angle, 0.3);
-
+    
+    visual_angle = lerp(visual_angle, target_angle, 0.3);
 }
 
 function change_direction(){
     
-    if dir < 0 and visual_xscale > -1 visual_xscale -= .15;
-    if dir > 0 and visual_xscale <  1 visual_xscale += .15;
-
+    if (dir < 0 && visual_xscale > -1) {
+        visual_xscale = max(-1, visual_xscale - 0.15);
+    } 
+    else if (dir > 0 && visual_xscale < 1) {
+        visual_xscale = min(1, visual_xscale + 0.15);
+    }
 }

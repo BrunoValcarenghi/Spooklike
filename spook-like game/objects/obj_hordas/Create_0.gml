@@ -61,6 +61,7 @@ criar_inimigo = function(n){
     enemy.sprite_index = global.enemies[n].spr;
     enemy.spd = global.enemies[n].spd;
     enemy.hp = global.enemies[n].hp;
+    enemy.dano = global.enemies[n].dano;
     enemy.shoot_time = global.enemies[n].shoot_time;
     enemy.distance = global.enemies[n].distance;
 
