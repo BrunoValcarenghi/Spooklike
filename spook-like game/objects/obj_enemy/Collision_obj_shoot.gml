@@ -1,6 +1,16 @@
 hp-=obj_player.dano
+
+with(obj_player){
+
+	if hp + (hp*rouba_vida) >= vida hp = vida
+	else hp += (hp*rouba_vida)
+
+}
+
 audio_random(sfx_damage)
 shake(5)
+
+alarm[2] = knock_time
 
 var _dir = point_direction(obj_player.x, obj_player.y, x, y);
 var _sys = part_system_create(ef_hit);
@@ -11,15 +21,3 @@ if image_alpha = 1 image_alpha = 0
 else image_alpha = 1
 alarm[1] = 5
 
-for(var i = irandom_range(3, 7); i > 0; i--) {
-	
-	var _dir2 = point_direction(obj_player.x, obj_player.y, x, y);
-	
-	instance_create_layer(
-		x + irandom_range(-20, 20) + lengthdir_x(50, _dir2), 
-		y + irandom_range(-20, 20) + lengthdir_y(50, _dir2), 
-		"effects", 
-		obj_blood
-	)
-
-}

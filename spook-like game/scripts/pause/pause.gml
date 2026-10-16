@@ -23,6 +23,7 @@ if keyboard_check_pressed(vk_escape){
 		//pause enemys
 		//pausa inimigos
 		instance_deactivate_layer("enemy")
+		instance_deactivate_layer("shoot")
 
 	}
 	

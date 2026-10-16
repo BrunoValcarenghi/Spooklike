@@ -37,10 +37,9 @@ if (qnt > 0) {
 else {
     var _inimigos_vivos = instance_number(obj_enemy);
     
-    if (_inimigos_vivos <= 0) {
-        if (keyboard_check_pressed(ord("E"))) {
-            atualiazar_horda();
-            tempo_spwn = 60; 
-        }
+    if (_inimigos_vivos <= 0) and !global.pausa{
+        if (!instance_exists(obj_upgrade_menu)) {
+	        instance_create_layer(0, 0, "UI", obj_upgrade_menu);
+	    }
     }
 }

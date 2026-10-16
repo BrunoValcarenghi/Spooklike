@@ -4,22 +4,36 @@ function shoot(){
 		
 		audio_random(sfx_shoot)
 		
-		//tempo
 		can_shoot = false;
 		alarm[0] = shoot_time;
 		
-		with instance_create_layer(x, y, "shoot", obj_shoot){
+		var _dir_base = point_direction(x, y, mouse_x, mouse_y);
 		
-		direction = point_direction(x, y, mouse_x, mouse_y)
-		image_angle = direction
-		speed = 6
-		image_xscale = other.tamanho_projetil
-		image_yscale = other.tamanho_projetil
+		var _num_proj = max(1, projeteis);
 		
+		var _spread_step = 8; 
+		
+		var _xx = 25
+		if dir = -1 _xx = -25
+		
+		for (var i = 0; i < _num_proj; i++) {
+			
+		
+			var _offset = (i - (_num_proj - 1) / 2) * _spread_step;
+			var _dir_final = _dir_base + _offset;
+			
+			with instance_create_layer(x+_xx, y-24, "shoot", obj_shoot){
+				
+				direction = _dir_final;
+				image_angle = direction;
+				speed = 6;
+				image_xscale = other.tamanho_projetil;
+				image_yscale = other.tamanho_projetil;
+				
+			}
 		}
 		
 	}
 	
 }
-
 

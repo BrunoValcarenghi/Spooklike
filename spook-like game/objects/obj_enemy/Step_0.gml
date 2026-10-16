@@ -3,6 +3,8 @@ and obj_player.invencible = false {
 	damage()
 }
 
+knockback()
+
 if hp < 1{instance_destroy()}
 
 if shoot_time > 0{
@@ -31,7 +33,7 @@ if shoot_time > 0{
 				direction = point_direction(x, y, obj_player.x,  obj_player.y)
 				image_angle = direction
 				speed = 6
-				dano_tiro = other.dano
+				dano = other.dano
 		
 			}
 		
@@ -46,4 +48,6 @@ if shoot_time > 0{
 
 }
 else inimigo_andando()
+
+
 

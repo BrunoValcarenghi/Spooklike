@@ -1,4 +1,4 @@
-horda = 0
+horda = 1
 tempo_spwn = 60
 
 atualiazar_horda = function(){
