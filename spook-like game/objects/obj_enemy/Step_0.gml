@@ -5,7 +5,16 @@ and obj_player.invencible = false {
 
 knockback()
 
-if hp < 1{instance_destroy()}
+if hp < 1{
+	
+	var _chance_drop = 0.07; 
+
+	if (random(1) < _chance_drop) {
+	    instance_create_layer(x, y, "item", obj_potion);
+	}
+	instance_destroy()
+	
+}
 
 if shoot_time > 0{
 

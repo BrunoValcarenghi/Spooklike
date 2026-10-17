@@ -1,7 +1,7 @@
-if hp < 1 room_restart()
+if hp < 1 game_restart()
 
 get_input()
-pause()
+//pause()
 
 if !trava {
 	move_col()

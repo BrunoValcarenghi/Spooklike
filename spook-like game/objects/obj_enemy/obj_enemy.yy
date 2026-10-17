@@ -46,8 +46,8 @@
     "path":"sprites/enemy1/enemy1.yy",
   },
   "spriteMaskId":{
-    "name":"spr_enemy",
-    "path":"sprites/spr_enemy/spr_enemy.yy",
+    "name":"spr_potion",
+    "path":"sprites/spr_potion/spr_potion.yy",
   },
   "visible":true,
 }

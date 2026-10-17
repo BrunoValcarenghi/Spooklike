@@ -7,14 +7,14 @@ function shoot(){
 		can_shoot = false;
 		alarm[0] = shoot_time;
 		
-		var _dir_base = point_direction(x, y, mouse_x, mouse_y);
+		var _xx = 25
+		if dir = -1 _xx = -25
+		
+		var _dir_base = point_direction(x + _xx, y-24, mouse_x, mouse_y);
 		
 		var _num_proj = max(1, projeteis);
 		
 		var _spread_step = 8; 
-		
-		var _xx = 25
-		if dir = -1 _xx = -25
 		
 		for (var i = 0; i < _num_proj; i++) {
 			

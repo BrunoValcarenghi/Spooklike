@@ -40,6 +40,7 @@ if (mouse_check_button_pressed(mb_left) && opcao_selecionada != -1) {
         switch (_escolhido.name) {
             case "Pacto de Sangue":
                 vida = ceil(vida * 1.15);
+				hp = vida
                 break;
                 
             case "Manopla Arcanista":
@@ -67,6 +68,7 @@ if (mouse_check_button_pressed(mb_left) && opcao_selecionada != -1) {
             case "Essência Híbrida":
                 dano *= 1.10;
                 vida = ceil(vida * 1.15);
+				hp = vida
                 break;
                 
             case "Duplo Arcano":
@@ -86,12 +88,13 @@ if (mouse_check_button_pressed(mb_left) && opcao_selecionada != -1) {
                 break;
                 
             case "Vampirismo Arcano":
-				if rouba_vida = 0 rouba_vida = 0.3
+				if rouba_vida = 0 rouba_vida = 0.1
                 else rouba_vida *= 1.10;
                 break;
                 
             case "Bênção do Mago Supremo":
                 vida = ceil(vida * 1.20);
+				hp = vida
                 dano *= 1.10;
                 defesa *= 1.15;
                 spd *= 1.05;
