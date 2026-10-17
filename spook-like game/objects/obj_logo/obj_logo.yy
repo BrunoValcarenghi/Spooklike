@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"VALCARENGHI",
-    "path":"sprites/VALCARENGHI/VALCARENGHI.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,9 +1,9 @@
 tx = 0
-grossura = 1
+grossura = 0
 font = f_nicoclean
 
 //begin color
-i_color = c_yellow
+i_color = $709dbd
 ib_color = c_black
 
 //hover color
@@ -16,4 +16,6 @@ b_color = ib_color
 
 clicou = false;
 
-scale = 7
+scale = 4
+
+text = "PLAY"

@@ -12,7 +12,8 @@ if image_alpha = 1{
 
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_middle)
-
+	
+	draw_set_font(f_nicopaint_maior)
 	text_border(x + tx, y, text, b_color, color, grossura)
 	
 }

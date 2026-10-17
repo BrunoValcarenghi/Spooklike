@@ -1,5 +1,7 @@
-horda = 1
+horda = 0
 tempo_spwn = 60
+
+desenho = 1
 
 atualiazar_horda = function(){
     horda++;

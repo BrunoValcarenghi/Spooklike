@@ -9,7 +9,8 @@ function button_hover_1(){
 		b_color = hb_color
 		
 		image_xscale = scale + 0.1
-		image_yscale = 1.1
+		image_yscale = .75
+		image_blend = $709dbd
 
 	}
 	else{
@@ -18,7 +19,8 @@ function button_hover_1(){
 		b_color = ib_color
 		
 		image_xscale = scale
-		image_yscale = 1
+		image_yscale = .7
+		image_blend = c_white
 		
 	}
 

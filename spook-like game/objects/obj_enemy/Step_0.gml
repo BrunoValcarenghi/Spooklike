@@ -12,6 +12,12 @@ if hp < 1{
 	if (random(1) < _chance_drop) {
 	    instance_create_layer(x, y, "item", obj_potion);
 	}
+	
+	var _dir = point_direction(obj_player.x, obj_player.y, x, y);
+	var _sys = part_system_create(ef_death);
+	part_system_position(_sys, x, y);
+	part_system_angle(_sys, _dir - 15);
+
 	instance_destroy()
 	
 }

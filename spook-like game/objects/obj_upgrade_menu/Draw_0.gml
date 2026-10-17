@@ -16,8 +16,6 @@ draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-draw_text_transformed(_cam_x + _cam_w / 2, _cam_y + (_cam_h * 0.12), "ESCOLHA SEU UPGRADE", 1.5, 1.5, 0);
-
 var _card_w = 260;
 var _card_h = 360;
 var _spacing = 25;
@@ -54,14 +52,14 @@ for (var i = 0; i < 3; i++) {
     draw_sprite_ext(_upgrade.spr, 0, _cx, _icon_y, _sc, _sc, 0, c_white, 1.0);
 
     draw_set_font(f_nicopaint);
-    draw_set_color(_is_hover ? _cor_custom : c_white);
+    draw_set_color(_is_hover ? c_orange : _cor_custom);
     var _name_y_offset = -10;
     var _name_y = _card_y + (_name_y_offset * _sc);
     draw_text_ext_transformed(_cx, _name_y, _upgrade.name, 18, (_card_w - 30), _sc, _sc, 0);
 
     draw_set_font(f_nicoclean);
-    draw_set_color(c_ltgray);
-    var _desc_y_offset = 60;
+    draw_set_valign(fa_top); 
+    var _desc_y_offset = 20;
     var _desc_y = _card_y + (_desc_y_offset * _sc);
     draw_text_ext_transformed(_cx, _desc_y, _upgrade.desc, 16, (_card_w - 40), _sc, _sc, 0);
 }

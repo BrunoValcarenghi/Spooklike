@@ -1,9 +1,9 @@
 tx = 0
-grossura = 1
+grossura = 0
 font = f_nicoclean
 
 //begin color
-i_color = c_yellow
+i_color = $709dbd
 ib_color = c_black
 
 //hover color
@@ -18,3 +18,6 @@ clicou = false;
 
 // position
 yy = 200
+
+scale = 4
+text = "EXIT"

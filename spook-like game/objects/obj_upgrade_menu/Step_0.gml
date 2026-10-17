@@ -61,7 +61,7 @@ if (mouse_check_button_pressed(mb_left) && opcao_selecionada != -1) {
                 
             case "Companheiro das Sombras":
                 
-				//instance_create_layer(x, y, "Instances", obj_bat_pet);
+				instance_create_layer(x, y, "Instances", obj_bat);
              
                 break;
                 
@@ -106,5 +106,6 @@ if (mouse_check_button_pressed(mb_left) && opcao_selecionada != -1) {
         atualiazar_horda();
     }
     
+	obj_hordas.desenho = 1
     instance_destroy();
 }

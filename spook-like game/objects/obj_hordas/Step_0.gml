@@ -43,3 +43,5 @@ else {
 	    }
     }
 }
+
+if desenho > 0 desenho -= .01
